@@ -1,0 +1,21 @@
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+
+}
+
+.logo img {
+	width: 150px;
+	border-radius: 5px;
+}
+
+.logo .icon {
+	font-size: 2rem;
+	color: var(--color-primary);
+}
+
+.logo .name {
+	font-size: 1.5rem;
+}
