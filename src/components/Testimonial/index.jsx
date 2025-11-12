@@ -48,7 +48,7 @@ const Testimonial = () =>
                 </div>
                 <div className="details">
                   <h3 className="name">{ list.name }</h3>
-                  <small>CEO of benvix</small>
+                  <small>{list.title}</small>
                 </div>
               </div>
 						</React.Fragment>

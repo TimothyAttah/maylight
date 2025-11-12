@@ -3,9 +3,9 @@ import { contacts } from '../../data';
 
 const Contact = () => {
 	return (
-    <section id='contact'>
-      <div className="bg__image"></div>
-      <div className="overlay"></div>
+		<section id='contact'>
+			<div className='bg__image'></div>
+			<div className='overlay'></div>
 			<div className='container'>
 				<div className='column'>
 					{contacts.map((contact, index) => (
@@ -22,11 +22,12 @@ const Contact = () => {
 					<div className='form__top'>
 						<div className='sub__title g-text'>Keep In Touch</div>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ut
-							rem, assumenda sint beatae ducimus ullam voluptas consectetur
-							veniam aliquam, reprehenderit quia veritatis, iste at voluptates
-							necessitatibus? Culpa, expedita delectus?
+							Stay connected with Maylight for the latest updates, project
+							insights, and renewable energy innovations. Whether you’re
+							planning a new installation or exploring sustainable solutions,
+							our team is always ready to assist.
 						</p>
+						<p>Let’s build a cleaner, brighter future — together.</p>
 					</div>
 					<div className='form__middle'>
 						<div className='row'>
@@ -64,12 +65,11 @@ const Contact = () => {
 							rows={5}
 							className='control'
 							id=''
-            ></textarea>
-
-          </div>
-          <div className="form__bottom">
-            <button className='btn btn__primary'>Send Message</button>
-          </div>
+						></textarea>
+					</div>
+					<div className='form__bottom'>
+						<button className='btn btn__primary'>Send Message</button>
+					</div>
 				</div>
 			</div>
 		</section>

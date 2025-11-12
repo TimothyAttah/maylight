@@ -204,35 +204,30 @@ export const faq = [
 ]
 
 export const testimonial = [
-  {
-    image:profile2,
-    name:'Samuel Eze',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laboris`
-  },
-  {
-    image:profile3,
-    name:'Emmanuel Joseph',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
-  },
-  {
-    image:profile4,
-    name:'Gloria Chiwendu',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laboris`
-  },
-  {
-    image:profile5,
-    name:'Precious Stone',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
-  }
-
+	{
+		image: profile2,
+		name: 'Adewale Johnson, Operations Director, Sunsteel Manufacturing Ltd.',
+		review: `Partnering with Maylight transformed our energy operations. The solar installation reduced our electricity costs by nearly half, and the team’s professionalism throughout the project was outstanding. Their attention to detail and commitment to deadlines exceeded our expectations.`,
+		title: 'Industrial Partner — Lagos Manufacturing Plant',
+	},
+	{
+		image: profile3,
+		name: 'Mrs. Clara Nwosu, Homeowner, Abuja',
+		review: `Maylight’s team made the entire process simple and transparent. From the initial consultation to installation, everything was handled with precision. I now enjoy reliable power at home without worrying about outages — it’s the best investment I’ve made.`,
+		title: 'Residential Client — Homeowner Installation',
+	},
+	{
+		image: profile4,
+		name: 'Engr. David Kalu, Facility Manager, BrightPath International School',
+		review: `Our partnership with Maylight has been a huge success. Their solar solution now powers our classrooms, labs, and administrative blocks seamlessly. Beyond installation, they’ve been exceptional in providing training and maintenance support.`,
+		title: 'Educational Institution — School Solar Project',
+	},
+	{
+		image: profile5,
+		name: 'Chief Emmanuel Okoro, Community Leader, Ezinachi Village',
+		review: `Maylight brought light to our community, quite literally. Their solar installation powers our health center and local market, improving lives and productivity. Their impact goes beyond energy — it’s about empowerment and sustainability.`,
+		title: 'Community Project — Rural Electrification Initiative',
+	},
 ];
 
 export const contacts = [
