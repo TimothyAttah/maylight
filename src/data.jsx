@@ -1,19 +1,80 @@
-import { IoCallOutline,IoLocationOutline } from "react-icons/io5";
-import { MdOutlineAlternateEmail } from "react-icons/md";
-import { FaYoutube,FaInstagram } from "react-icons/fa";
-import { CiLinkedin ,CiFacebook} from "react-icons/ci";
-import { profile2, profile3,profile4,profile5,
-         panel,turbine,batteries, member1, member2, member3, member4} from "./assets";
+import { IoCallOutline, IoLocationOutline } from 'react-icons/io5';
+import { MdOutlineAlternateEmail } from 'react-icons/md';
+import { FaYoutube, FaInstagram } from 'react-icons/fa';
+import { CiLinkedin, CiFacebook } from 'react-icons/ci';
+import {
+	profile2,
+	profile3,
+	profile4,
+	profile5,
+	panel,
+	turbine,
+	batteries,
+	member1,
+	member2,
+	member3,
+	member4,
+} from './assets';
+
+// export const navTabs = [
+//     {name:"Home",id:'header'},
+//     {name:"About Us",id:'about'},
+//     {name:"Services",id:'services'},
+//     {name:"Team",id:'team'},
+//     {name:"Project",id:'project'},
+//     {name:"Clients",id:'testimonial'},
+//     {name:"FAQ",id:'faq'},
+//     {name:"Contact",id:'contact'},
+// ];
 
 export const navTabs = [
-    {name:"Home",id:'header'},
-    {name:"About Us",id:'about'},
-    {name:"Services",id:'services'},
-    {name:"Team",id:'team'},
-    {name:"Project",id:'project'},
-    {name:"Clients",id:'testimonial'},
-    {name:"FAQ",id:'faq'},
-    {name:"Contact",id:'contact'},
+	{
+		name: 'Home',
+		navPath: '/',
+	},
+	{
+		name: 'About Us',
+		navPath: '/about',
+	},
+
+	{
+		name: 'Services',
+    navPath: '/services',
+    id: 1,
+		subMenu: [
+			{
+				name: 'Piping',
+				navPath: '/services/piping',
+			},
+			{
+				name: 'electrical',
+				navPath: '/services/electrical',
+			},
+			{
+				name: 'solar',
+				navPath: '/services/solar',
+			},
+			{
+				name: 'water',
+				navPath: '/services/water',
+			},
+			{
+				name: 'Battery',
+				navPath: '/services/battery',
+			},
+		],
+	},
+	{
+		name: 'FAQ',
+		navPath: '/faq',
+	},
+	{
+		name: 'Contact',
+		navPath: '/contact',
+	},
+	// { name: 'Team', id: 'team' },
+	// { name: 'Project', id: 'project' },
+	// { name: 'Clients', id: 'testimonial' },
 ];
 
 export const services = [
@@ -40,51 +101,67 @@ export const services = [
 ];
 
 export const teams = [
-  {
-    name:"Oluoma James",
-    title:"Technician",
-    profile:member1,
-    social:[
-      {name:"Facebook",icon:<CiFacebook/>,url:"http://facebook.com"},
-      {name:"LinkedIn",icon:<CiLinkedin/>,url:"http://linkedin.com"},
-      {name:"Youtube",icon:<FaYoutube/>,url:"https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1"},
-      {name:"Instagram",icon:<FaInstagram/>,url:"http://instagram.com"},
-    ]
-  },
-  {
-    name:"Mary Brown",
-    title:"Technician",
-    profile:member2,
-    social:[
-      {name:"Facebook",icon:<CiFacebook/>,url:"http://facebook.com"},
-      {name:"LinkedIn",icon:<CiLinkedin/>,url:"http://linkedin.com"},
-      {name:"Youtube",icon:<FaYoutube/>,url:"https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1"},
-      {name:"Instagram",icon:<FaInstagram/>,url:"http://instagram.com"},
-    ]
-  },
-  {
-    name:"Lawrence Onu",
-    title:"Technician",
-    profile:member3,
-    social:[
-      {name:"Facebook",icon:<CiFacebook/>,url:"http://facebook.com"},
-      {name:"LinkedIn",icon:<CiLinkedin/>,url:"http://linkedin.com"},
-      {name:"Youtube",icon:<FaYoutube/>,url:"https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1"},
-      {name:"Instagram",icon:<FaInstagram/>,url:"http://instagram.com"},
-    ]
-  },
-  {
-    name:"Joy Eze",
-    title:"Technician",
-    profile:member4,
-    social:[
-      {name:"Facebook",icon:<CiFacebook/>,url:"http://facebook.com"},
-      {name:"LinkedIn",icon:<CiLinkedin/>,url:"http://linkedin.com"},
-      {name:"Youtube",icon:<FaYoutube/>,url:"https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1"},
-      {name:"Instagram",icon:<FaInstagram/>,url:"http://instagram.com"},
-    ]
-  },
-]
+	{
+		name: 'Oluoma James',
+		title: 'Technician',
+		profile: member1,
+		social: [
+			{ name: 'Facebook', icon: <CiFacebook />, url: 'http://facebook.com' },
+			{ name: 'LinkedIn', icon: <CiLinkedin />, url: 'http://linkedin.com' },
+			{
+				name: 'Youtube',
+				icon: <FaYoutube />,
+				url: 'https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1',
+			},
+			{ name: 'Instagram', icon: <FaInstagram />, url: 'http://instagram.com' },
+		],
+	},
+	{
+		name: 'Mary Brown',
+		title: 'Technician',
+		profile: member2,
+		social: [
+			{ name: 'Facebook', icon: <CiFacebook />, url: 'http://facebook.com' },
+			{ name: 'LinkedIn', icon: <CiLinkedin />, url: 'http://linkedin.com' },
+			{
+				name: 'Youtube',
+				icon: <FaYoutube />,
+				url: 'https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1',
+			},
+			{ name: 'Instagram', icon: <FaInstagram />, url: 'http://instagram.com' },
+		],
+	},
+	{
+		name: 'Lawrence Onu',
+		title: 'Technician',
+		profile: member3,
+		social: [
+			{ name: 'Facebook', icon: <CiFacebook />, url: 'http://facebook.com' },
+			{ name: 'LinkedIn', icon: <CiLinkedin />, url: 'http://linkedin.com' },
+			{
+				name: 'Youtube',
+				icon: <FaYoutube />,
+				url: 'https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1',
+			},
+			{ name: 'Instagram', icon: <FaInstagram />, url: 'http://instagram.com' },
+		],
+	},
+	{
+		name: 'Joy Eze',
+		title: 'Technician',
+		profile: member4,
+		social: [
+			{ name: 'Facebook', icon: <CiFacebook />, url: 'http://facebook.com' },
+			{ name: 'LinkedIn', icon: <CiLinkedin />, url: 'http://linkedin.com' },
+			{
+				name: 'Youtube',
+				icon: <FaYoutube />,
+				url: 'https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1',
+			},
+			{ name: 'Instagram', icon: <FaInstagram />, url: 'http://instagram.com' },
+		],
+	},
+];
 
 export const projects = [
 	{
@@ -136,9 +213,9 @@ export const projects = [
 ];
 
 export const faq = [
-  {
-    title:"How do solar panels work?",
-    description:`
+	{
+		title: 'How do solar panels work?',
+		description: `
        Solar panels convert sunlight into electricity
        using photovoltaic (PV) cells. When sunlight hits the cells,
        it creates an electric field that generates direct current (DC)
@@ -146,62 +223,62 @@ export const faq = [
        alternating current (AC) electricity using an inverter, making
        it usable for your home or business.
     `,
-  },
-  {
-    title:"What are the benefits of installing solar panels?",
-    description:`
+	},
+	{
+		title: 'What are the benefits of installing solar panels?',
+		description: `
        Installing solar panels can reduce or eliminate your
        electricity bills, increase the value of your property,
        decrease your carbon footprint, and provide a renewable
        source of energy. Additionally, many regions offer incentives
        and rebates for solar installations.
     `,
-  },
-  {
-    title:"How much does a solar power system cost?",
-    description:`
+	},
+	{
+		title: 'How much does a solar power system cost?',
+		description: `
       The cost of a solar power system varies depending on the size of
        the system, the type of equipment used, and your location. On
        average, a residential solar panel system can range from $15,000
        to $25,000 before incentives and rebates.
     `,
-  },
-  {
-    title:"How long will it take for my solar panels to pay for themselves?",
-    description:`
+	},
+	{
+		title: 'How long will it take for my solar panels to pay for themselves?',
+		description: `
     The payback period for solar panels typically ranges from 6 to 10 years,
     depending on factors such as your energy usage, the cost of electricity
     in your area, and the available financial incentives.
     `,
-  },
-  {
-    title:"Will my solar panels work during a power outage?",
-    description:`
+	},
+	{
+		title: 'Will my solar panels work during a power outage?',
+		description: `
       Most grid-tied solar power systems will not function during a power
       outage for safety reasons unless they are paired with a battery
        storage system or a solar generator that allows for off-grid
        operation.
     `,
-  },
-  {
-    title:"How much maintenance do solar panels require?",
-    description:`
+	},
+	{
+		title: 'How much maintenance do solar panels require?',
+		description: `
     Solar panels require minimal maintenance. Regular cleaning to remove dust,
     dirt, and debris, as well as periodic inspections to ensure everything is
     functioning properly, is generally sufficient. Most panels come with a
     25-year warranty.
     `,
-  },
-  {
-    title:"Do I need a battery storage system?",
-    description:`
+	},
+	{
+		title: 'Do I need a battery storage system?',
+		description: `
       While a battery storage system is not required, it can be beneficial
       for storing excess energy generated during the day for use at night or
       during power outages. Batteries can also help you become more energy
       independent.
     `,
-  },
-]
+	},
+];
 
 export const testimonial = [
 	{
@@ -231,43 +308,44 @@ export const testimonial = [
 ];
 
 export const contacts = [
-  {
-    name:"Email",
-    value:"maylight@gmail.com",
-    icon:<MdOutlineAlternateEmail />,
-  },
-  {
-    name:"Phone Number",
-    value:"+2348061940887",
-    icon:<IoCallOutline/>,
-  },
-  {
-    name:"Address",
-    value:"Ajah, Lagos, Nigeria",
-    icon:<IoLocationOutline/>,
-  },
-]
+	{
+		name: 'Email',
+		value: 'maylight@gmail.com',
+		icon: <MdOutlineAlternateEmail />,
+	},
+	{
+		name: 'Phone Number',
+		value: '+2348061940887',
+		icon: <IoCallOutline />,
+	},
+	{
+		name: 'Address',
+		value: 'Ajah, Lagos, Nigeria',
+		icon: <IoLocationOutline />,
+	},
+];
 
 export const footer = [
-    {
-      name:"Explore",
-      routes:[
-        {name:"Home",id:'header'},
-        {name:"About Us",id:'about'},
-        {name:"Services",id:'services'},
-        {name:"Team",id:'team'},
-        {name:"Project",id:'project'},
-        {name:"Clients",id:'testimonial'},
-        {name:"FAQ",id:'faq'},
-        {name:"Contact",id:'contact'},
-      ]
-    },
-    {
-        name:"Gallery",
-        routes:[
-          {name:"Privacy Policy"},
-          {name:"Terms and Conditions"},
-          {name:"Cookie Policy"},
-        ]
-      },
-]
+	{
+		name: 'Explore',
+		routes: [
+			{ name: 'Home', id: 'header' },
+			{ name: 'About Us', id: 'about' },
+			{ name: 'Services', id: 'services' },
+			{ name: 'Team', id: 'team' },
+			{ name: 'Project', id: 'project' },
+			{ name: 'Clients', id: 'testimonial' },
+			{ name: 'FAQ', id: 'faq' },
+			{ name: 'Contact', id: 'contact' },
+		],
+	},
+	{
+		name: 'Gallery',
+		routes: [
+			{ name: 'Privacy Policy' },
+			{ name: 'Terms and Conditions' },
+			{ name: 'Cookie Policy' },
+		],
+	},
+];
+

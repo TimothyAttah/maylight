@@ -3,7 +3,7 @@ import './Header.css';
 import { solar__skyscraper } from '../../assets';
 import SolarSystem from '../SolarSystem';
 
-const Header = () => {
+const HomeHeader = () => {
 	return (
 		<header id='header'>
 			<div className='system__wrapper'>
@@ -22,10 +22,10 @@ const Header = () => {
 						installation at a time.
 					</p>
 					<div className='buttons__container'>
-						<Link to='services' className='btn'>
+						<Link to='/services' className='btn'>
 							Our Services
 						</Link>
-						<Link to='contact' className='btn btn__primary'>
+						<Link to='/contact' className='btn btn__primary'>
 							Contact Us
 						</Link>
 					</div>
@@ -40,4 +40,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default HomeHeader;
