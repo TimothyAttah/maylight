@@ -1,12 +1,12 @@
 import './About.css';
 import { company__photo } from '../../assets';
 import { FaCheck } from 'react-icons/fa';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 const About = () => {
 	return (
 		<section id='about'>
-			<div className='container'>
+			<div className='container about__container'>
 				<div className='column company__photo'>
 					<img src={company__photo} alt='Maylight' />
 				</div>
@@ -66,10 +66,14 @@ const About = () => {
 					</div>
 
 					<div className='buttons__container'>
-						<Link to='project' smooth={true} className='btn'>
+						<Link to='/about' smooth={true} className='btn'>
 							Explore
 						</Link>
-						<Link to='contact' smooth={true} className='btn btn__primary'>
+						<Link
+							to='/contact/start-project'
+							smooth={true}
+							className='btn btn__primary'
+						>
 							Get a quote
 						</Link>
 					</div>

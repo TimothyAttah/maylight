@@ -121,10 +121,7 @@ export default function Solar() {
 								author: 'Green Valley Estates',
 							},
 						].map((t) => (
-							<div
-								key={t.author}
-								
-							>
+							<div key={t.author}>
 								<p className='text__muted'>“{t.text}”</p>
 								<h4 className='g-text'>— {t.author}</h4>
 							</div>
@@ -139,9 +136,9 @@ export default function Solar() {
 						Let Maylight design the perfect solar solution for your home or
 						business.
 					</p>
-					<button className='btn  btn__primary'>
+					<Link to='/contact' className='btn  btn__primary'>
 						Request a Free Solar Quote
-					</button>
+					</Link>
 				</Styles.CTA>
 			</Styles.Container>
 		</div>

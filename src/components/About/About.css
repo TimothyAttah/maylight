@@ -1,8 +1,11 @@
 #about .container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 400px auto;
   align-items: stretch;
-  gap: 30px;
+  gap: 30px; */
+
+  display: flex;
+  gap: 30px
 }
 
 #about .company__photo {
@@ -57,10 +60,13 @@
   width: 100%;
 }
 
-@media (max-width: 900px){
+@media screen and (max-width: 900px){
   #about .container {
-    grid-template-columns: 100%;
+    /* grid-template-columns: 100%; */
+    flex-direction: column;
+
   }
+
 
   #about .description,
   #about .sub__title {
@@ -83,5 +89,13 @@
 
   #about .group .row .details h3 {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 350px){
+  #about .group {
+  
+    grid-template-columns: repeat(1,1fr);
+
   }
 }

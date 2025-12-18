@@ -61,7 +61,7 @@ const Header = () => {
 
 			<div className='box'>
 				<Link to='/contact/start-project' className='btn contact__btn'>
-					Get started
+					Start a Project
 				</Link>
 				<div
 					className='icon__container menu__btn'

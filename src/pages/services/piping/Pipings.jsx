@@ -39,7 +39,9 @@ const Pipings = () => {
 							plumbing, and industrial piping.
 						</h4>
 
-						<Link className='btn btn__primary'>Start a Project</Link>
+						<Link to='/contact/start-project' className='btn btn__primary'>
+							Start a Project
+						</Link>
 					</Styles.InfoText>
 					<Styles.InfoImg>
 						<img src={pix1} alt='' />
@@ -113,7 +115,9 @@ const Pipings = () => {
 							If you have any questions or would like to discuss your project,
 							don’t hesitate to reach out to us.
 						</p>
-						<Link className='btn'>Start a Project</Link>
+						<Link to='/contact/start-project' className='btn'>
+							Start a Project
+						</Link>
 					</Styles.Card>
 					<Styles.Card primary>
 						<h4>NEED A FREE CONSULTANCY?</h4>
@@ -121,7 +125,9 @@ const Pipings = () => {
 							Needing more information or not sure where to start from? we’re
 							here to help you figure it out
 						</p>
-						<Link className='btn btn__primary'>Get In Touch</Link>
+						<Link to='/contact' className='btn btn__primary'>
+							Get In Touch
+						</Link>
 					</Styles.Card>
 				</Styles.CardContainer>
 			</Styles.Container>

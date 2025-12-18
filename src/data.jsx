@@ -84,12 +84,14 @@ export const services = [
 		description: `We provide cutting-edge solar panels engineered for performance, durability, and efficiency.
     Our solar systems are designed to convert sunlight into clean, renewable energy — reducing costs while protecting the planet.
     Whether for residential, commercial, or community projects, our panels deliver reliable power you can count on every day.`,
+		path: '/services/solar'
 	},
 	{
 		name: 'Wind Turbines',
 		image: turbine,
 		description: `We believe in the limitless potential of nature. Our wind turbines transform natural wind flow into dependable, renewable electricity — providing clean energy for homes, businesses, and communities.
     Built for efficiency and reliability, our wind systems deliver consistent performance, helping you reduce energy costs and carbon emissions without compromising on quality.`,
+		path: '/services/electrical'
 	},
 	{
 		name: 'Battery Storage Solutions',
@@ -97,6 +99,7 @@ export const services = [
 		description: `At Maylight, we understand that energy independence means more than just generation — it’s about storage and reliability.
     Our Battery Storage Solutions allow homes, businesses, and communities to store excess energy from solar or wind systems and use it when needed most.
     With Maylight, you get smart, durable, and efficient battery systems designed to keep your power flowing — day or night.`,
+		path: '/services/battery'
 	},
 ];
 
@@ -348,4 +351,3 @@ export const footer = [
 		],
 	},
 ];
-

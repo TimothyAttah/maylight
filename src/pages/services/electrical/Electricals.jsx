@@ -23,9 +23,7 @@ const Electricals = () => {
 						<Link to='/contact' className='btn'>
 							Request a Battery Assessment
 						</Link>
-						<Link to='#' className='btn btn__primary'>
-							Learn More
-						</Link>
+						
 					</div>
 				</Styles.HeroContent>
 			</Styles.HeroSection>
@@ -39,7 +37,9 @@ const Electricals = () => {
 							on sustainability and energy efficiency.
 						</h4>
 
-						<Link className='btn btn__primary'>Start a Project</Link>
+						<Link to='/contact/start-project' className='btn btn__primary'>
+							Start a Project
+						</Link>
 					</Styles.InfoText>
 					<Styles.InfoImg>
 						<img src={panel} alt='' />
@@ -154,7 +154,9 @@ const Electricals = () => {
 							If you have any questions or would like to discuss your project,
 							don’t hesitate to reach out to us.
 						</p>
-						<Link className='btn'>Start a Project</Link>
+						<Link to='/contact/start-project' className='btn'>
+							Start a Project
+						</Link>
 					</Styles.Card>
 					<Styles.Card primary>
 						<h4>NEED A FREE CONSULTANCY?</h4>
@@ -162,7 +164,9 @@ const Electricals = () => {
 							Needing more information or not sure where to start from? we’re
 							here to help you figure it out
 						</p>
-						<Link className='btn btn__primary'>Get In Touch</Link>
+						<Link to='/contact' className='btn btn__primary'>
+							Get In Touch
+						</Link>
 					</Styles.Card>
 				</Styles.CardContainer>
 			</Styles.Container>

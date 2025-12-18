@@ -1,6 +1,7 @@
 import './Services.css';
 import { services } from '../../data';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
+import { scrollToTop } from '../header/Header';
 
 const Services = () => {
 	return (
@@ -21,11 +22,19 @@ const Services = () => {
 							<div className='details'>
 								<h3>{service.name}</h3>
 								<p className='text__muted description'>{service.description}</p>
-              </div>
-              <div className="buttons__container">
-                <button className="btn">Read More</button>
-                <Link to='contact' className='btn btn__primary'>Get Started</Link>
-              </div>
+							</div>
+							<div className='buttons__container'>
+								<Link
+									to={service.path}
+									className='btn'
+									onClick={() => scrollToTop()}
+								>
+									Read More
+								</Link>
+								<Link to='/contact/start-project' className='btn btn__primary'>
+									Get Started
+								</Link>
+							</div>
 						</div>
 					))}
 				</div>

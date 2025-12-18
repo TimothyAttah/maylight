@@ -78,7 +78,7 @@ const HeroSlider = () => {
 								<Styles.SlideContentWrapper>
 									<h2>{slide.title}</h2>
 									<p>{slide.desc}</p>
-									<Link>Who we are</Link>
+									<Link to='/about'>Who we are</Link>
 								</Styles.SlideContentWrapper>
 							</FadeInSlider>
 						</Styles.SlideContent>

@@ -64,7 +64,7 @@ export const SlideContent = styled.div`
 	div a {
 		width: 180px;
 		height: 40px;
-		margin: auto;
+		margin:  auto;
 		background-color: #fff;
 		color: var(--primary-color);
 		color: #00813299;
@@ -72,7 +72,7 @@ export const SlideContent = styled.div`
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin: 20px 0;
+		margin: 20px auto;
 		text-transform: uppercase;
 		font-weight: bold;
 		border-radius: 10px;
@@ -153,6 +153,7 @@ export const SlideContentWrapper = styled.div`
 	transition: transform 0.75s cubic-bezier(0.72, 0.05, 0.35, 1) 0.75s,
 		opacity 0.5s cubic-bezier(0.72, 0.05, 0.35, 1) 0.75s;
 	backdrop-filter: 60px;
+
 
 	@media screen and (max-width: 950px) {
 		padding: 20px;

@@ -18,9 +18,6 @@ const Battery = () => {
 						<Link to='/contact' className='btn'>
 							Request a Battery Assessment
 						</Link>
-						<Link to='#' className='btn btn__primary'>
-							Learn More
-						</Link>
 					</div>
 				</Styles.HeroContent>
 			</Styles.HeroSection>
@@ -55,9 +52,9 @@ const Battery = () => {
 						Let Maylight design and implement smart, sustainable solutions for
 						your home or business.
 					</p>
-					<button className='btn  btn__primary'>
+					<Link to='/contact' className='btn  btn__primary'>
 						Get Your Free Consultation
-					</button>
+					</Link>
 				</Styles.CTA>
 			</Styles.Container>
 		</div>
